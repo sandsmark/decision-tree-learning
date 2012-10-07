@@ -1,0 +1,100 @@
+    • What can you conclude about the results you have obtained? Which
+      Choose-Attribute is better, and why?
+The information-gain based Choose-Attribute is better, since it provides the
+smallest tree, with the most accurate predictions.
+
+    • Do you get the same result if you run the random Choose-Attribute
+      several times?
+No, I get different results, as the pseudo-random generator is seeded from the
+system clock, and therefore completely different trees are generated.
+
+    • What happens when you run the learner based on Information Gain
+      several times?
+I get the same results, as the input the tree is based on doesn't change, as
+the test and training data is consistent and seemingly based on a deterministic
+function.
+
+Example trees:
+
+Infogain tree:
+VAL: 0
+VAL: 1
+    VAL: 1
+    VAL: 2
+    VAL: 1
+        VAL: 2
+        VAL: 2
+        VAL: 2
+            VAL: 1
+
+Random tree:
+VAL: 4
+VAL: 1
+VAL: 3
+VAL: 6
+VAL: 0
+VAL: 1
+    VAL: 2
+    VAL: 1
+        VAL: 2
+    VAL: 2
+    VAL: 1
+        VAL: 0
+        VAL: 1
+            VAL: 2
+    VAL: 0
+    VAL: 1
+        VAL: 6
+        VAL: 2
+        VAL: 1
+            VAL: 2
+            VAL: 5
+            VAL: 2
+            VAL: 1
+                VAL: 2
+                VAL: 2
+                VAL: 1
+                    VAL: 2
+    VAL: 6
+    VAL: 0
+    VAL: 1
+        VAL: 2
+        VAL: 2
+            VAL: 1
+        VAL: 5
+        VAL: 3
+        VAL: 1
+            VAL: 0
+            VAL: 1
+                VAL: 2
+                VAL: 2
+                    VAL: 1
+            VAL: 2
+            VAL: 3
+            VAL: 2
+                VAL: 1
+                VAL: 1
+    VAL: 1
+    VAL: 3
+    VAL: 0
+    VAL: 1
+        VAL: 2
+        VAL: 1
+            VAL: 2
+        VAL: 6
+        VAL: 0
+        VAL: 1
+            VAL: 2
+            VAL: 1
+                VAL: 2
+            VAL: 2
+            VAL: 1
+                VAL: 0
+                VAL: 1
+                    VAL: 2
+        VAL: 0
+        VAL: 1
+            VAL: 2
+            VAL: 2
+                VAL: 1
+
